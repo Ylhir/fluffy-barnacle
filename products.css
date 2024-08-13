@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+
+html {
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+
+#header-img {
+   width: 10%;
+   height: 5%;
+   margin: 0.5rem;
+}
+
+#nav-bar {
+   padding: 1rem 0;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: lightgreen;
+   margin: 0 1rem;
+   border-radius: 20px;
+   margin-top: 0;
+   margin-bottom: 1rem;
+   width: 50%;
+}
+
+.nav-link {
+   text-decoration: none;
+   color: black;
+   font-size: 1rem;
+   font-family: Arial, sans-serif;
+   text-align: center;
+}
+
+#nav-link:hover {
+   color: white;
+   background-color: yellowgreen;
+}
+
+p {
+   font-size: 1.5rem;
+   font-family: Arial, sans-serif;
+}
+
+h1 {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 2rem;
+   font-weight: bold;
+   color: black;
+   font-family: Impact, sans-serif;
+   padding: 1rem 0.5rem;
+   margin: 1rem;
+}
+
+#video-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem;
+   margin: 1rem;
+}
+
+#video {
+   width: 400px;
+   min-width: 100px;
+   max-width: 1000px;
+   height: 200px;
+   min-height: 100px;
+   max-height: 1000px;
+}
+
+#form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 1rem;
+}
+
+#email {
+   height: 3rem;
+   width: 80%;
+   text-align: center;
+   margin: 1rem;
+   border-radius: 10px;
+}
+
+#email::placeholder {
+   text-align: center;
+}
+
+#submit {
+   height: 3rem;
+   width: 40%;
+   display: block;
+   border-radius: 10px;
+   background-color: #ffbd15;
+   color: black;
+   font-family: Impact, sans-serif;
+   font-weight: bold;
+}
+
+h2 {
+   text-transform: uppercase;
+}
+
+.weapon-container {
+   padding: 1rem;
+   margin: 1rem;
+}
+
+.weapon-container h2, .weapon-container p {
+   padding: 1rem;
+}
+
+.lord-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 200px;
+   grid-gap: 20px;
+   text-align: center;
+}
+
+.price {
+   font-style: italic;
+   padding: 1rem;
+}
+
+.description {
+   padding: 1rem;
+}
+
+.selection {
+   padding: 0.5rem;
+   margin: 2rem 0 1rem;
+   background-color: #ffbd15;
+   color: black;
+   font-family: Impact, sans-serif;
+   font-weight: bold;
+}
+
+.lord-container div {
+   border: 1px solid black;
+   border-radius: 10px;
+}
+
+.lord-container h2 {
+   width: 100%;
+   background-color: gray;
+   border-radius: 10px 10px 0 0;
+}
+
+footer {
+   margin: 2rem 0;
+   background-color: lightgoldenrodyellow;
+   width: 100%;
+   text-align: right;
+   color: black;
+}
+
+footer a {
+   color: black;
+   text-decoration: none;
+   padding: 0.5rem;
+   font-weight: bold;
+}
+
+footer p {
+   padding: 0.5rem;
+}
+
+@media(max-width: 500px){
+   .lord-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin: auto 20%;
+   }
+}
